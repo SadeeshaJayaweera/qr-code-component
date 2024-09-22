@@ -1,57 +1,97 @@
-body{
-    
+body {
     background-color: hsl(212, 45%, 89%);
     min-height: 100vh;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    display: flex;
-    }
-    
-    p{
-        font-family:'Outfit', sans-serif;
-        color: gray;
-        line-height: 2px;
-    }
+    margin: 0;
+    padding: 0;
+}
 
-    
-    .container{
-        border: 2px solid white;
-        margin: 40px;
-        padding-top: 25px;
-        padding-bottom: 40px;
-        padding-right: 25px;
-        padding-left: 25px; 
-        background-color: white;
-        border-radius: 20px 20px 20px 20px;
-    }
+p {
+    font-family: 'Outfit', sans-serif;
+    color: gray;
+    line-height: 1.5; /* Adjusted for better readability on mobile */
+}
 
-    .container h3,p{
-        text-align: center;
-    }
-    
-    .text{
-        font-weight: 400, 700;
-        font-family: 'Outfit', sans-serif;
-        line-height: 6px;
-        
-    
-    }
-    
-    
-    .text2{
-    font-size: 15px;
-    line-height: 1px;
+.container {
+    border: 2px solid white;
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 20px;
+    width: 90%; /* Adjusted width for mobile responsiveness */
+    max-width: 400px; /* Prevent it from growing too large on wider screens */
+}
+
+.container h3, .container p {
+    text-align: center;
+}
+
+.text {
+    font-weight: 400;
+    font-family: 'Outfit', sans-serif;
+    line-height: 1.2;
+}
+
+.text2 {
+    font-size: 14px;
+    line-height: 1.2;
     margin-bottom: 20px;
-    
+}
+
+.attribution {
+    line-height: 1.5;
+    text-align: center;
+}
+
+#image {
+    border-radius: 15px 10px 10px 10px;
+    width: 100%; /* Ensures the image takes up full width on mobile */
+}
+
+/* Media queries for smaller devices */
+@media only screen and (max-width: 600px) {
+    .container {
+        padding: 15px;
+        margin: 10px;
+        border-radius: 15px;
     }
-    
-    .attribution{
-        line-height: 0.5px;
+
+    .text {
+        font-size: 16px;
     }
-    
-    #image{
-        border-radius: 15px 10px 10px 10px; 
-    
-        
+
+    .text2 {
+        font-size: 13px;
     }
+
+    p {
+        font-size: 14px;
+    }
+}
+
+/* Media query for larger screens (tablets and desktops) */
+@media only screen and (min-width: 37.5rem) {
+    body {
+        background-color: var(--clr-primary-two);
+    }
+
+    .container {
+        max-width: 600px; /* Allow it to grow a bit larger on wider screens */
+        padding: 30px;
+    }
+
+    .text {
+        font-size: 18px;
+    }
+
+    .text2 {
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+}
