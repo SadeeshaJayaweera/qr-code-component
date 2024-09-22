@@ -12,7 +12,7 @@ body {
 p {
     font-family: 'Outfit', sans-serif;
     color: gray;
-    line-height: 1.5; /* Adjusted for better readability on mobile */
+    line-height: 1; /* Adjusted for better readability on mobile */
 }
 
 .container {
@@ -21,8 +21,8 @@ p {
     padding: 20px;
     background-color: white;
     border-radius: 20px;
-    width: 90%; /* Adjusted width for mobile responsiveness */
-    max-width: 400px; /* Prevent it from growing too large on wider screens */
+    width: 80%; /* Adjusted width for mobile responsiveness */
+    max-width: 300px; /* Prevent it from growing too large on wider screens */
 }
 
 .container h3, .container p {
@@ -32,17 +32,17 @@ p {
 .text {
     font-weight: 400;
     font-family: 'Outfit', sans-serif;
-    line-height: 1.2;
+    line-height:1;
 }
 
 .text2 {
     font-size: 14px;
-    line-height: 1.2;
+    line-height: 1;
     margin-bottom: 20px;
 }
 
 .attribution {
-    line-height: 1.5;
+    line-height: 1.2;
     text-align: center;
 }
 
