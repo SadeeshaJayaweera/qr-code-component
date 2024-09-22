@@ -72,26 +72,3 @@ p {
     }
 }
 
-/* Media query for larger screens (tablets and desktops) */
-@media only screen and (min-width: 37.5rem) {
-    body {
-        background-color: var(--clr-primary-two);
-    }
-
-    .container {
-        max-width: 600px; /* Allow it to grow a bit larger on wider screens */
-        padding: 30px;
-    }
-
-    .text {
-        font-size: 18px;
-    }
-
-    .text2 {
-        font-size: 16px;
-    }
-
-    p {
-        font-size: 15px;
-    }
-}
